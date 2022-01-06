@@ -44,7 +44,7 @@
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>ACQUISITION_MATRIX_DIMENSION_2D</name>
                 <uuid>43b4c733-c0ac-4192-af2a-63d3fec077d0</uuid>
-                <value>128</value>
+                <value>1</value>
                 <defaultValue>128</defaultValue>
                 <description>Size of the initial dataset (raw data; ACQUISITION_MATRIX_DIMENSION_2D)</description>
                 <displayedName>Acquisition 2D</displayedName>
@@ -141,10 +141,10 @@
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>BASE_FREQ_1</name>
                 <uuid>2012dd06-15b6-4119-a038-a0f2992e6e7d</uuid>
-                <value>0.0</value>
-                <defaultValue>0.0</defaultValue>
+                <value>4.0011610519686484E8</value>
+                <defaultValue>4.001170935E8</defaultValue>
                 <description>Base frequency of the first sequence channel</description>
-                <displayedName>Base Freq 1</displayedName>
+                <displayedName>Base Freq 1 [1H]</displayedName>
                 <locked>true</locked>
                 <lockedToDefault>false</lockedToDefault>
                 <restrictedToSuggested>false</restrictedToSuggested>
@@ -160,10 +160,10 @@
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>BASE_FREQ_2</name>
                 <uuid>defbbea1-e1b6-4526-bf4e-6d6813d32c88</uuid>
-                <value>0.0</value>
+                <value>4.0011610519686484E8</value>
                 <defaultValue>0.0</defaultValue>
                 <description>Base frequency of the second sequence channel</description>
-                <displayedName>Base Freq 2</displayedName>
+                <displayedName>Base Freq 2 [1H]</displayedName>
                 <locked>true</locked>
                 <lockedToDefault>false</lockedToDefault>
                 <restrictedToSuggested>false</restrictedToSuggested>
@@ -179,10 +179,10 @@
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>BASE_FREQ_3</name>
                 <uuid>4420541f-f3ce-4966-9262-813ec85e9861</uuid>
-                <value>0.0</value>
+                <value>4.0011610519686484E8</value>
                 <defaultValue>0.0</defaultValue>
                 <description>Base frequency of the third sequence channel</description>
-                <displayedName>Base Freq 3</displayedName>
+                <displayedName>Base Freq 3 [1H]</displayedName>
                 <locked>true</locked>
                 <lockedToDefault>false</lockedToDefault>
                 <restrictedToSuggested>false</restrictedToSuggested>
@@ -198,10 +198,10 @@
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>BASE_FREQ_4</name>
                 <uuid>5e0b7ef5-1257-443b-9e73-5a5cedea18ee</uuid>
-                <value>0.0</value>
+                <value>4.0011610519686484E8</value>
                 <defaultValue>0.0</defaultValue>
                 <description>Base frequency of the fourth sequence channel</description>
-                <displayedName>Base Freq 4</displayedName>
+                <displayedName>Base Freq 4 [1H]</displayedName>
                 <locked>true</locked>
                 <lockedToDefault>false</lockedToDefault>
                 <restrictedToSuggested>false</restrictedToSuggested>
@@ -238,8 +238,8 @@
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="booleanParam">
                 <name>DIGITAL_FILTER_REMOVED</name>
                 <uuid>ef92df28-a971-4c08-adf6-2ea5ea900329</uuid>
-                <value>false</value>
-                <defaultValue>false</defaultValue>
+                <value>true</value>
+                <defaultValue>true</defaultValue>
                 <description>Data shift activated: true</description>
                 <displayedName>Digital filter removed</displayedName>
                 <locked>true</locked>
@@ -253,8 +253,8 @@
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>DIGITAL_FILTER_SHIFT</name>
                 <uuid>0c742149-9d6a-4571-935a-7be53b8353fa</uuid>
-                <value>0</value>
-                <defaultValue>0</defaultValue>
+                <value>18</value>
+                <defaultValue>18</defaultValue>
                 <description>Data shift due to the digital filter</description>
                 <displayedName>Digital filter shift</displayedName>
                 <locked>true</locked>
@@ -291,7 +291,7 @@
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>DWELL_TIME</name>
                 <uuid>d52d131c-fc53-4712-962b-d4eaee8a03d6</uuid>
-                <value>0.0</value>
+                <value>8.0E-5</value>
                 <defaultValue>0.0</defaultValue>
                 <description>Reception dwell time</description>
                 <displayedName>DW</displayedName>
@@ -310,7 +310,7 @@
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>FID_RES</name>
                 <uuid>0fccc08e-ee64-4b0d-94ae-d61b70625b08</uuid>
-                <value>0.0</value>
+                <value>97.656</value>
                 <defaultValue>0.0</defaultValue>
                 <description>Resolution of FID</description>
                 <displayedName>FID Res</displayedName>
@@ -329,7 +329,7 @@
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>FID_RES_2D</name>
                 <uuid>2bee926b-749b-422b-b64e-cab9d98db840</uuid>
-                <value>0.0</value>
+                <value>12500.0</value>
                 <defaultValue>0.0</defaultValue>
                 <description>Resolution of FID 2D</description>
                 <displayedName>FID Res 2D</displayedName>
@@ -348,8 +348,8 @@
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>INTERMEDIATE_FREQUENCY</name>
                 <uuid>a76ecb0b-1275-4532-bd24-42b757127ae1</uuid>
-                <value>0.0</value>
-                <defaultValue>0.0</defaultValue>
+                <value>1.26E7</value>
+                <defaultValue>1.0</defaultValue>
                 <description>Sampling frequency after demodulation</description>
                 <displayedName>Intermediate frequency</displayedName>
                 <locked>true</locked>
@@ -408,7 +408,7 @@
                 <name>MAGNETIC_FIELD_STRENGTH</name>
                 <uuid>340d776f-56ef-4f08-bbad-fe08f8e39ed5</uuid>
                 <value>5</value>
-                <defaultValue>5</defaultValue>
+                <defaultValue>7</defaultValue>
                 <description>Magnetic field strength</description>
                 <displayedName>B0</displayedName>
                 <locked>true</locked>
@@ -1049,11 +1049,65 @@
             </value>
         </entry>
         <entry>
+            <key>Nb_2d</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
+                <name>Nb_2d</name>
+                <uuid>cf4e1b52-184f-43ad-a30c-707a4e8bccb8</uuid>
+                <value>1</value>
+                <defaultValue>1</defaultValue>
+                <displayedName>Nb_2d</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <restrictedToSuggested>false</restrictedToSuggested>
+                <numberEnum>Scan</numberEnum>
+                <minValue>0</minValue>
+                <maxValue>2147483647</maxValue>
+                <group>Dimension</group>
+                <category>Acquisition</category>
+            </value>
+        </entry>
+        <entry>
+            <key>Nb_3d</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
+                <name>Nb_3d</name>
+                <uuid>0e86ce4a-0676-40aa-bd88-395cda7f87f6</uuid>
+                <value>1</value>
+                <defaultValue>1</defaultValue>
+                <displayedName>Nb_3d</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <restrictedToSuggested>false</restrictedToSuggested>
+                <numberEnum>Scan</numberEnum>
+                <minValue>0</minValue>
+                <maxValue>2147483647</maxValue>
+                <group>Dimension</group>
+                <category>Acquisition</category>
+            </value>
+        </entry>
+        <entry>
+            <key>Nb_4d</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
+                <name>Nb_4d</name>
+                <uuid>e4e7fdb5-654f-4567-b2b7-d09b36985726</uuid>
+                <value>1</value>
+                <defaultValue>1</defaultValue>
+                <displayedName>Nb_4d</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <restrictedToSuggested>false</restrictedToSuggested>
+                <numberEnum>Scan</numberEnum>
+                <minValue>0</minValue>
+                <maxValue>2147483647</maxValue>
+                <group>Dimension</group>
+                <category>Acquisition</category>
+            </value>
+        </entry>
+        <entry>
             <key>OBSERVED_FREQUENCY</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>OBSERVED_FREQUENCY</name>
                 <uuid>698753b2-c1c2-4efb-9924-bd2c371c842d</uuid>
-                <value>6.3E7</value>
+                <value>4.0011610519686484E8</value>
                 <defaultValue>6.3E7</defaultValue>
                 <description>Frequency of the acquisition</description>
                 <displayedName>Observed frequency</displayedName>
@@ -1214,7 +1268,7 @@
                 <value>0.0</value>
                 <defaultValue>0.0</defaultValue>
                 <description>Offset frequency of the first sequence channel</description>
-                <displayedName>Offset 1</displayedName>
+                <displayedName>Offset 1 [1H]</displayedName>
                 <locked>false</locked>
                 <lockedToDefault>false</lockedToDefault>
                 <restrictedToSuggested>false</restrictedToSuggested>
@@ -1223,6 +1277,8 @@
                 <maxValue>1.5E9</maxValue>
                 <group>Emission</group>
                 <category>Acquisition</category>
+                <uuidBaseFrequency>2012dd06-15b6-4119-a038-a0f2992e6e7d</uuidBaseFrequency>
+                <initialNumberEnum>FrequencyOffset</initialNumberEnum>
             </value>
         </entry>
         <entry>
@@ -1233,7 +1289,7 @@
                 <value>0.0</value>
                 <defaultValue>0.0</defaultValue>
                 <description>Offset frequency of the second sequence channel</description>
-                <displayedName>Offset 2</displayedName>
+                <displayedName>Offset 2 [1H]</displayedName>
                 <locked>false</locked>
                 <lockedToDefault>false</lockedToDefault>
                 <restrictedToSuggested>false</restrictedToSuggested>
@@ -1242,6 +1298,8 @@
                 <maxValue>1.5E9</maxValue>
                 <group>Emission</group>
                 <category>Acquisition</category>
+                <uuidBaseFrequency>defbbea1-e1b6-4526-bf4e-6d6813d32c88</uuidBaseFrequency>
+                <initialNumberEnum>FrequencyOffset</initialNumberEnum>
             </value>
         </entry>
         <entry>
@@ -1252,7 +1310,7 @@
                 <value>0.0</value>
                 <defaultValue>0.0</defaultValue>
                 <description>Offset frequency of the third sequence channel</description>
-                <displayedName>Offset 3</displayedName>
+                <displayedName>Offset 3 [1H]</displayedName>
                 <locked>false</locked>
                 <lockedToDefault>false</lockedToDefault>
                 <restrictedToSuggested>false</restrictedToSuggested>
@@ -1261,6 +1319,8 @@
                 <maxValue>1.5E9</maxValue>
                 <group>Emission</group>
                 <category>Acquisition</category>
+                <uuidBaseFrequency>4420541f-f3ce-4966-9262-813ec85e9861</uuidBaseFrequency>
+                <initialNumberEnum>FrequencyOffset</initialNumberEnum>
             </value>
         </entry>
         <entry>
@@ -1271,7 +1331,7 @@
                 <value>0.0</value>
                 <defaultValue>0.0</defaultValue>
                 <description>Offset frequency of the fourth sequence channel</description>
-                <displayedName>Offset 4</displayedName>
+                <displayedName>Offset 4 [1H]</displayedName>
                 <locked>false</locked>
                 <lockedToDefault>false</lockedToDefault>
                 <restrictedToSuggested>false</restrictedToSuggested>
@@ -1280,6 +1340,8 @@
                 <maxValue>1.5E9</maxValue>
                 <group>Emission</group>
                 <category>Acquisition</category>
+                <uuidBaseFrequency>5e0b7ef5-1257-443b-9e73-5a5cedea18ee</uuidBaseFrequency>
+                <initialNumberEnum>FrequencyOffset</initialNumberEnum>
             </value>
         </entry>
         <entry>
@@ -1404,6 +1466,25 @@
             </value>
         </entry>
         <entry>
+            <key>Pre_scan</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
+                <name>Pre_scan</name>
+                <uuid>55b4fd1d-28d4-484f-9641-4a089acb2f94</uuid>
+                <value>0</value>
+                <defaultValue>0</defaultValue>
+                <description>PreScan</description>
+                <displayedName>Pre_scan</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <restrictedToSuggested>false</restrictedToSuggested>
+                <numberEnum>Scan</numberEnum>
+                <minValue>0</minValue>
+                <maxValue>2147483647</maxValue>
+                <group>Dimension</group>
+                <category>Acquisition</category>
+            </value>
+        </entry>
+        <entry>
             <key>RECEIVER_COUNT</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>RECEIVER_COUNT</name>
@@ -1464,8 +1545,8 @@
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
                 <name>SEQUENCE_NAME</name>
                 <uuid>52750c3b-4bb7-41ca-a042-0e5577952c9b</uuid>
-                <value></value>
-                <defaultValue></defaultValue>
+                <value>GitTest</value>
+                <defaultValue>GitTest</defaultValue>
                 <description>Name of the sequence</description>
                 <displayedName>Sequence</displayedName>
                 <locked>true</locked>
@@ -1539,6 +1620,7 @@
                 <maxValue>1.0E8</maxValue>
                 <group>Reception</group>
                 <category>Acquisition</category>
+                <uuidBaseFrequency>698753b2-c1c2-4efb-9924-bd2c371c842d</uuidBaseFrequency>
                 <initialNumberEnum>SW</initialNumberEnum>
             </value>
         </entry>
@@ -1559,6 +1641,7 @@
                 <maxValue>1.0E8</maxValue>
                 <group>Reception</group>
                 <category>Acquisition</category>
+                <uuidBaseFrequency>55a59b57-5a2a-4b6e-b1ea-fb8c7d05be37</uuidBaseFrequency>
                 <initialNumberEnum>SW</initialNumberEnum>
             </value>
         </entry>
@@ -1603,6 +1686,8 @@
                 <maxValue>1.5E9</maxValue>
                 <group>Reception</group>
                 <category>Acquisition</category>
+                <uuidBaseFrequency>698753b2-c1c2-4efb-9924-bd2c371c842d</uuidBaseFrequency>
+                <initialNumberEnum>FrequencyOffset</initialNumberEnum>
             </value>
         </entry>
         <entry>
@@ -1633,6 +1718,22 @@
                 <locked>false</locked>
                 <lockedToDefault>false</lockedToDefault>
                 <restrictedToSuggested>false</restrictedToSuggested>
+                <suggestedValues>Bordered2D</suggestedValues>
+                <suggestedValues>Bordered2D_FSE</suggestedValues>
+                <suggestedValues>Centered2D</suggestedValues>
+                <suggestedValues>Centered2D_FSE</suggestedValues>
+                <suggestedValues>Centered2D_FSERot</suggestedValues>
+                <suggestedValues>Centered2DRot</suggestedValues>
+                <suggestedValues>EchoAntiechoTransform</suggestedValues>
+                <suggestedValues>MapShim3DTransform</suggestedValues>
+                <suggestedValues>SEEPISequential</suggestedValues>
+                <suggestedValues>Sequential</suggestedValues>
+                <suggestedValues>Sequential2D</suggestedValues>
+                <suggestedValues>Sequential2DInterleaved</suggestedValues>
+                <suggestedValues>Sequential4D</suggestedValues>
+                <suggestedValues>Sequential4D_Dummy2D</suggestedValues>
+                <suggestedValues>Sequential4DBackAndForth</suggestedValues>
+                <suggestedValues>Sequential4DCine</suggestedValues>
                 <group>Scan</group>
                 <category>Acquisition</category>
             </value>
@@ -1642,10 +1743,10 @@
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>TRANSMIT_FREQ_1</name>
                 <uuid>565af312-267e-45a2-a40f-ce7171b70f32</uuid>
-                <value>0.0</value>
-                <defaultValue>0.0</defaultValue>
+                <value>4.0011610519686484E8</value>
+                <defaultValue>4.001170935E8</defaultValue>
                 <description>Transmit frequency of the first sequence channel</description>
-                <displayedName>Transmit Freq 1</displayedName>
+                <displayedName>Transmit 1 [1H]</displayedName>
                 <locked>true</locked>
                 <lockedToDefault>false</lockedToDefault>
                 <restrictedToSuggested>false</restrictedToSuggested>
@@ -1661,10 +1762,10 @@
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>TRANSMIT_FREQ_2</name>
                 <uuid>55a59b57-5a2a-4b6e-b1ea-fb8c7d05be37</uuid>
-                <value>0.0</value>
+                <value>4.0011610519686484E8</value>
                 <defaultValue>0.0</defaultValue>
                 <description>Transmit frequency of the second sequence channel</description>
-                <displayedName>Transmit Freq 2</displayedName>
+                <displayedName>Transmit 2 [1H]</displayedName>
                 <locked>true</locked>
                 <lockedToDefault>false</lockedToDefault>
                 <restrictedToSuggested>false</restrictedToSuggested>
@@ -1680,10 +1781,10 @@
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>TRANSMIT_FREQ_3</name>
                 <uuid>8adc8c93-b3ab-44b3-9f4e-3d224d878133</uuid>
-                <value>0.0</value>
+                <value>4.0011610519686484E8</value>
                 <defaultValue>0.0</defaultValue>
                 <description>Transmit frequency of the third sequence channel</description>
-                <displayedName>Transmit Freq 3</displayedName>
+                <displayedName>Transmit 3 [1H]</displayedName>
                 <locked>true</locked>
                 <lockedToDefault>false</lockedToDefault>
                 <restrictedToSuggested>false</restrictedToSuggested>
@@ -1699,10 +1800,10 @@
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>TRANSMIT_FREQ_4</name>
                 <uuid>69901ea3-d8b3-4b7d-b545-11e464ea8e28</uuid>
-                <value>0.0</value>
+                <value>4.0011610519686484E8</value>
                 <defaultValue>0.0</defaultValue>
                 <description>Transmit frequency of the fourth sequence channel</description>
-                <displayedName>Transmit Freq 4</displayedName>
+                <displayedName>Transmit 4 [1H]</displayedName>
                 <locked>true</locked>
                 <lockedToDefault>false</lockedToDefault>
                 <restrictedToSuggested>false</restrictedToSuggested>
@@ -1718,6 +1819,7 @@
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="listNumberParam">
                 <name>TX_ROUTE</name>
                 <uuid>346ddba9-470f-4c25-a93b-62a8477dfa33</uuid>
+                <value>0</value>
                 <description>LogCh-&gt;PhysCh</description>
                 <displayedName>TX_ROUTE</displayedName>
                 <locked>true</locked>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <sequenceIO>
-    <sequence dummyScanKey="param27" gradRotPhiKey="param28" gradRotThetaKey="param29" gradRotPsiKey="param30">
+    <sequence rxGainTableKey="table16" ifFreqKey="param175" accuDimKey="param176" extTrigModeKey="param180" extTrigSourceKey="param179" dummyScanKey="param27" preScanKey="param177" firCoefSelectedKey="param178" updateDimensionKey="param181" acqTimeModeKey="param182" gradRotPhiKey="param28" gradRotThetaKey="param29" gradRotPsiKey="param30">
         <acquChannel swKey="param1" nameKey="param0">
             <keyList></keyList>
             <keyList></keyList>
@@ -58,7 +58,7 @@
             <keyList>elem30</keyList>
             <keyList>elem35</keyList>
         </timeChannel>
-        <ttlChannels nameKey="param40" defaultElementKey="elem3">
+        <ttlChannels ttlIDKey="param183" nameKey="param40" defaultElementKey="elem3">
             <keyList>elem9</keyList>
             <keyList>elem14</keyList>
             <keyList>elem19</keyList>
@@ -76,7 +76,7 @@
             <keyList>elem31</keyList>
             <keyList>elem36</keyList>
         </blankingChannels>
-        <txChannels baseFreqKey="param32" levelKey="param33" nameKey="param31">
+        <txChannels baseFreqKey="param32" levelKey="param33" nucleusKey="param174" nameKey="param31">
             <keyList></keyList>
             <keyList></keyList>
             <keyList>elem40</keyList>
@@ -86,7 +86,7 @@
             <keyList></keyList>
         </txChannels>
         <pulses/>
-        <observedTxIndex>-1</observedTxIndex>
+        <observedTxIndex>0</observedTxIndex>
     </sequence>
     <elems>
         <name>ElementRepos</name>
@@ -298,7 +298,7 @@
         <Entry>
             <count>2</count>
             <key>elem41</key>
-            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="loElement" offsetKey="table26" phaseKey="table27" phaseModKey="table28" nameKey="param169" enabledKey="param170"/>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="loElement" offsetKey="table26" phaseKey="table27" shapePhaseKey="table18" phaseModKey="table28" nameKey="param169" enabledKey="param170"/>
         </Entry>
         <Entry>
             <count>1</count>
@@ -332,7 +332,7 @@
                 <value>12500.0</value>
                 <defaultValue>12500.0</defaultValue>
                 <displayedName>Spectral_width</displayedName>
-                <locked>false</locked>
+                <locked>true</locked>
                 <lockedToDefault>false</lockedToDefault>
                 <restrictedToSuggested>false</restrictedToSuggested>
                 <numberEnum>SW</numberEnum>
@@ -538,7 +538,7 @@
                 <value>1</value>
                 <defaultValue>1</defaultValue>
                 <displayedName>Nb_1d</displayedName>
-                <locked>false</locked>
+                <locked>true</locked>
                 <lockedToDefault>false</lockedToDefault>
                 <restrictedToSuggested>false</restrictedToSuggested>
                 <numberEnum>Scan</numberEnum>
@@ -590,7 +590,7 @@
                 <value>1</value>
                 <defaultValue>1</defaultValue>
                 <displayedName>Nb_2d</displayedName>
-                <locked>false</locked>
+                <locked>true</locked>
                 <lockedToDefault>false</lockedToDefault>
                 <restrictedToSuggested>false</restrictedToSuggested>
                 <numberEnum>Scan</numberEnum>
@@ -642,7 +642,7 @@
                 <value>1</value>
                 <defaultValue>1</defaultValue>
                 <displayedName>Nb_3d</displayedName>
-                <locked>false</locked>
+                <locked>true</locked>
                 <lockedToDefault>false</lockedToDefault>
                 <restrictedToSuggested>false</restrictedToSuggested>
                 <numberEnum>Scan</numberEnum>
@@ -694,7 +694,7 @@
                 <value>1</value>
                 <defaultValue>1</defaultValue>
                 <displayedName>Nb_4d</displayedName>
-                <locked>false</locked>
+                <locked>true</locked>
                 <lockedToDefault>false</lockedToDefault>
                 <restrictedToSuggested>false</restrictedToSuggested>
                 <numberEnum>Scan</numberEnum>
@@ -747,7 +747,7 @@
                 <defaultValue>0</defaultValue>
                 <description>Dummy Scan</description>
                 <displayedName>Dummy_scan</displayedName>
-                <locked>false</locked>
+                <locked>true</locked>
                 <lockedToDefault>false</lockedToDefault>
                 <restrictedToSuggested>false</restrictedToSuggested>
                 <numberEnum>Scan</numberEnum>
@@ -827,7 +827,7 @@
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>Frequency</name>
                 <uuid>bbb72c90-d589-4636-9834-4eb5805dbab1</uuid>
-                <value>6.35E7</value>
+                <value>4.0011610519686484E8</value>
                 <defaultValue>6.35E7</defaultValue>
                 <displayedName>Frequency</displayedName>
                 <locked>false</locked>
@@ -893,7 +893,7 @@
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
                 <name>TxAtt</name>
                 <uuid>56db4989-bc7c-4750-8926-f8f2700fff50</uuid>
-                <value>0.0</value>
+                <value>15.0</value>
                 <defaultValue>0.0</defaultValue>
                 <displayedName>TxAtt</displayedName>
                 <locked>false</locked>
@@ -2899,6 +2899,336 @@
                 <maxValue>4194304</maxValue>
             </value>
         </Entry>
+        <Entry>
+            <count>1</count>
+            <key>param174</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
+                <name>Tx_nucleus</name>
+                <uuid>05199e38-55af-4ee2-9193-034c26770666</uuid>
+                <value>1H</value>
+                <defaultValue>1H</defaultValue>
+                <description>Nucleus used for the first sequence channel</description>
+                <displayedName>Nucleus 1</displayedName>
+                <locked>true</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <restrictedToSuggested>true</restrictedToSuggested>
+                <suggestedValues>Y</suggestedValues>
+                <suggestedValues>Other</suggestedValues>
+                <suggestedValues>X</suggestedValues>
+                <suggestedValues>1H</suggestedValues>
+                <suggestedValues>2H</suggestedValues>
+                <suggestedValues>3H</suggestedValues>
+                <suggestedValues>3He</suggestedValues>
+                <suggestedValues>6Li</suggestedValues>
+                <suggestedValues>7Li</suggestedValues>
+                <suggestedValues>9Be</suggestedValues>
+                <suggestedValues>10B</suggestedValues>
+                <suggestedValues>11B</suggestedValues>
+                <suggestedValues>13C</suggestedValues>
+                <suggestedValues>14N</suggestedValues>
+                <suggestedValues>15N</suggestedValues>
+                <suggestedValues>17O</suggestedValues>
+                <suggestedValues>19F</suggestedValues>
+                <suggestedValues>21Ne</suggestedValues>
+                <suggestedValues>23Na</suggestedValues>
+                <suggestedValues>25Mg</suggestedValues>
+                <suggestedValues>27Al</suggestedValues>
+                <suggestedValues>29Si</suggestedValues>
+                <suggestedValues>31P</suggestedValues>
+                <suggestedValues>33S</suggestedValues>
+                <suggestedValues>35Cl</suggestedValues>
+                <suggestedValues>37Cl</suggestedValues>
+                <suggestedValues>39K</suggestedValues>
+                <suggestedValues>40K</suggestedValues>
+                <suggestedValues>41K</suggestedValues>
+                <suggestedValues>43Ca</suggestedValues>
+                <suggestedValues>45Sc</suggestedValues>
+                <suggestedValues>47Ti</suggestedValues>
+                <suggestedValues>49Ti</suggestedValues>
+                <suggestedValues>50V</suggestedValues>
+                <suggestedValues>51V</suggestedValues>
+                <suggestedValues>53Cr</suggestedValues>
+                <suggestedValues>55Mn</suggestedValues>
+                <suggestedValues>57Fe</suggestedValues>
+                <suggestedValues>59Co</suggestedValues>
+                <suggestedValues>61Ni</suggestedValues>
+                <suggestedValues>63Cu</suggestedValues>
+                <suggestedValues>65Cu</suggestedValues>
+                <suggestedValues>67Zn</suggestedValues>
+                <suggestedValues>69Ga</suggestedValues>
+                <suggestedValues>71Ga</suggestedValues>
+                <suggestedValues>73Ge</suggestedValues>
+                <suggestedValues>75As</suggestedValues>
+                <suggestedValues>77Se</suggestedValues>
+                <suggestedValues>79Br</suggestedValues>
+                <suggestedValues>81Br</suggestedValues>
+                <suggestedValues>83Kr</suggestedValues>
+                <suggestedValues>85Rb</suggestedValues>
+                <suggestedValues>87Rb</suggestedValues>
+                <suggestedValues>87Sr</suggestedValues>
+                <suggestedValues>89Y</suggestedValues>
+                <suggestedValues>91Zr</suggestedValues>
+                <suggestedValues>93Nb</suggestedValues>
+                <suggestedValues>95Mo</suggestedValues>
+                <suggestedValues>97Mo</suggestedValues>
+                <suggestedValues>99Tc</suggestedValues>
+                <suggestedValues>99Ru</suggestedValues>
+                <suggestedValues>101Ru</suggestedValues>
+                <suggestedValues>103Rh</suggestedValues>
+                <suggestedValues>105Pd</suggestedValues>
+                <suggestedValues>107Ag</suggestedValues>
+                <suggestedValues>109Ag</suggestedValues>
+                <suggestedValues>111Cd</suggestedValues>
+                <suggestedValues>113Cd</suggestedValues>
+                <suggestedValues>113In</suggestedValues>
+                <suggestedValues>115Sn</suggestedValues>
+                <suggestedValues>115In</suggestedValues>
+                <suggestedValues>117Sn</suggestedValues>
+                <suggestedValues>119Sn</suggestedValues>
+                <suggestedValues>121Sb</suggestedValues>
+                <suggestedValues>123Te</suggestedValues>
+                <suggestedValues>123Sb</suggestedValues>
+                <suggestedValues>125Te</suggestedValues>
+                <suggestedValues>127I</suggestedValues>
+                <suggestedValues>129Xe</suggestedValues>
+                <suggestedValues>131Xe</suggestedValues>
+                <suggestedValues>133Cs</suggestedValues>
+                <suggestedValues>135Ba</suggestedValues>
+                <suggestedValues>137Ba</suggestedValues>
+                <suggestedValues>138La</suggestedValues>
+                <suggestedValues>139La</suggestedValues>
+                <suggestedValues>141Pr</suggestedValues>
+                <suggestedValues>143Nd</suggestedValues>
+                <suggestedValues>145Nd</suggestedValues>
+                <suggestedValues>147Sm</suggestedValues>
+                <suggestedValues>149Sm</suggestedValues>
+                <suggestedValues>151Eu</suggestedValues>
+                <suggestedValues>153Eu</suggestedValues>
+                <suggestedValues>155Gd</suggestedValues>
+                <suggestedValues>157Gd</suggestedValues>
+                <suggestedValues>159Tb</suggestedValues>
+                <suggestedValues>161Dy</suggestedValues>
+                <suggestedValues>163Dy</suggestedValues>
+                <suggestedValues>165Ho</suggestedValues>
+                <suggestedValues>167Er</suggestedValues>
+                <suggestedValues>169Tm</suggestedValues>
+                <suggestedValues>171Yb</suggestedValues>
+                <suggestedValues>173Yb</suggestedValues>
+                <suggestedValues>175Lu</suggestedValues>
+                <suggestedValues>176Lu</suggestedValues>
+                <suggestedValues>177Hf</suggestedValues>
+                <suggestedValues>179Hf</suggestedValues>
+                <suggestedValues>181Ta</suggestedValues>
+                <suggestedValues>183W</suggestedValues>
+                <suggestedValues>185Re</suggestedValues>
+                <suggestedValues>187Re</suggestedValues>
+                <suggestedValues>187Os</suggestedValues>
+                <suggestedValues>189Os</suggestedValues>
+                <suggestedValues>191Ir</suggestedValues>
+                <suggestedValues>193Ir</suggestedValues>
+                <suggestedValues>195Pt</suggestedValues>
+                <suggestedValues>197Au</suggestedValues>
+                <suggestedValues>199Hg</suggestedValues>
+                <suggestedValues>201Hg</suggestedValues>
+                <suggestedValues>203Tl</suggestedValues>
+                <suggestedValues>205Tl</suggestedValues>
+                <suggestedValues>207Pb</suggestedValues>
+                <suggestedValues>209Bi</suggestedValues>
+                <suggestedValues>235U</suggestedValues>
+                <group>Miscellaneous</group>
+                <category>Acquisition</category>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>param175</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
+                <name>Intermediate_frequency</name>
+                <uuid>dc0508b3-b8cb-4e4c-a7ae-66998eb68b8c</uuid>
+                <value>1.26E7</value>
+                <defaultValue>1.0</defaultValue>
+                <displayedName>Intermediate_frequency</displayedName>
+                <locked>true</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <restrictedToSuggested>false</restrictedToSuggested>
+                <numberEnum>Frequency</numberEnum>
+                <minValue>0.0</minValue>
+                <maxValue>3.0E9</maxValue>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>param176</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
+                <name>Accu_dim</name>
+                <uuid>2fe82c6e-3ba4-4f47-a24e-b8a5ac3c715e</uuid>
+                <value>1</value>
+                <defaultValue>1</defaultValue>
+                <description>Dimension of data accumulation</description>
+                <displayedName>Accu_dim</displayedName>
+                <locked>true</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <restrictedToSuggested>false</restrictedToSuggested>
+                <numberEnum>Integer</numberEnum>
+                <minValue>0</minValue>
+                <maxValue>4</maxValue>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>param177</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
+                <name>Pre_scan</name>
+                <uuid>55b4fd1d-28d4-484f-9641-4a089acb2f94</uuid>
+                <value>0</value>
+                <defaultValue>0</defaultValue>
+                <description>PreScan</description>
+                <displayedName>Pre_scan</displayedName>
+                <locked>true</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <restrictedToSuggested>false</restrictedToSuggested>
+                <numberEnum>Scan</numberEnum>
+                <minValue>0</minValue>
+                <maxValue>2147483647</maxValue>
+                <group>Dimension</group>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>param178</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="numberParam">
+                <name>FIR_coef</name>
+                <uuid>1c93af7b-c11d-47fa-b5ca-be5031d328d0</uuid>
+                <value>0</value>
+                <defaultValue>0</defaultValue>
+                <displayedName>FIR_coef</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <restrictedToSuggested>false</restrictedToSuggested>
+                <numberEnum>Integer</numberEnum>
+                <minValue>0</minValue>
+                <maxValue>15</maxValue>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>param179</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
+                <name>Ext_trig_source</name>
+                <uuid>42e657f7-c227-4929-bd69-5c27ff6a17ab</uuid>
+                <value>Ext1</value>
+                <defaultValue>Ext1</defaultValue>
+                <description>Source of external trigger</description>
+                <displayedName>Ext_trig_source</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <restrictedToSuggested>true</restrictedToSuggested>
+                <suggestedValues>Ext1</suggestedValues>
+                <suggestedValues>Ext2</suggestedValues>
+                <suggestedValues>Ext1_AND_Ext2</suggestedValues>
+                <suggestedValues>Ext1_XOR_Ext2</suggestedValues>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>param180</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
+                <name>Ext_trig_mode</name>
+                <uuid>72119f60-c1a2-4f67-8ac4-b8f28a69f6ea</uuid>
+                <value>RisingEdge</value>
+                <defaultValue>RisingEdge</defaultValue>
+                <description>Mode of external trigger</description>
+                <displayedName>Ext_trig_mode</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <restrictedToSuggested>true</restrictedToSuggested>
+                <suggestedValues>RisingEdge</suggestedValues>
+                <suggestedValues>FallingEdge</suggestedValues>
+                <suggestedValues>StateHigh</suggestedValues>
+                <suggestedValues>StateLow</suggestedValues>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>param181</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
+                <name>Update_dimension</name>
+                <uuid>deeab092-8f51-40aa-98b6-95ba798d1fe7</uuid>
+                <value>Disable</value>
+                <defaultValue>Disable</defaultValue>
+                <description>Update Table content on this dimension</description>
+                <displayedName>Update_dimension</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <restrictedToSuggested>true</restrictedToSuggested>
+                <suggestedValues>Disable</suggestedValues>
+                <suggestedValues>1D</suggestedValues>
+                <suggestedValues>2D</suggestedValues>
+                <suggestedValues>3D</suggestedValues>
+                <suggestedValues>4D</suggestedValues>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>param182</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
+                <name>AcqTimeMode</name>
+                <uuid>c71c595d-1b46-45bc-aa89-ead52529a9be</uuid>
+                <value>None</value>
+                <defaultValue>None</defaultValue>
+                <description>Acquisition time resolution mode</description>
+                <displayedName>AcqTimeMode</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <restrictedToSuggested>true</restrictedToSuggested>
+                <suggestedValues>None</suggestedValues>
+                <suggestedValues>Time</suggestedValues>
+                <suggestedValues>NbPoints</suggestedValues>
+                <suggestedValues>SpectralWidth</suggestedValues>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>param183</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="textParam">
+                <name>TTL_id</name>
+                <uuid>b5f185a7-a88d-4b58-ac50-4e87dc343544</uuid>
+                <value>NC</value>
+                <defaultValue>SEL_H_F</defaultValue>
+                <displayedName>TTL_id</displayedName>
+                <locked>false</locked>
+                <lockedToDefault>false</lockedToDefault>
+                <restrictedToSuggested>true</restrictedToSuggested>
+                <suggestedValues>SEL_H_F</suggestedValues>
+                <suggestedValues>SEL_X_F</suggestedValues>
+                <suggestedValues>NC</suggestedValues>
+                <suggestedValues>BlkTX1</suggestedValues>
+                <suggestedValues>BlkTX2</suggestedValues>
+                <suggestedValues>BlkTX3</suggestedValues>
+                <suggestedValues>BlkTX4</suggestedValues>
+                <suggestedValues>BlkGradX</suggestedValues>
+                <suggestedValues>BlkGradY</suggestedValues>
+                <suggestedValues>BlkGradZ</suggestedValues>
+                <suggestedValues>LockHold</suggestedValues>
+                <suggestedValues>ScopeTrigger</suggestedValues>
+                <suggestedValues>USER0</suggestedValues>
+                <suggestedValues>USER1</suggestedValues>
+                <suggestedValues>USER2</suggestedValues>
+                <suggestedValues>USER3</suggestedValues>
+                <suggestedValues>USER4</suggestedValues>
+                <suggestedValues>USER5</suggestedValues>
+                <suggestedValues>USER6</suggestedValues>
+                <suggestedValues>USER7</suggestedValues>
+                <suggestedValues>USER8</suggestedValues>
+                <suggestedValues>USER9</suggestedValues>
+                <suggestedValues>USER10</suggestedValues>
+                <suggestedValues>USER11</suggestedValues>
+                <suggestedValues>USER12</suggestedValues>
+                <suggestedValues>USER13</suggestedValues>
+                <suggestedValues>USER14</suggestedValues>
+                <suggestedValues>USER15</suggestedValues>
+            </value>
+        </Entry>
     </params>
     <tables>
         <name>TableRepos</name>
@@ -3112,9 +3442,34 @@
         </Entry>
         <Entry>
             <count>1</count>
+            <key>table16</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="table">
+                <name>Rx_gain</name>
+                <description></description>
+                <numberEnum>RxGain</numberEnum>
+                <order>One</order>
+                <locked>true</locked>
+                <address>-1</address>
+                <list>30.0</list>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
             <key>table17</key>
             <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="shape">
                 <name>Shape_phase</name>
+                <description></description>
+                <numberEnum>Phase</numberEnum>
+                <order>One</order>
+                <locked>false</locked>
+                <address>-1</address>
+            </value>
+        </Entry>
+        <Entry>
+            <count>1</count>
+            <key>table18</key>
+            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="shape">
+                <name>Shape_phase2</name>
                 <description></description>
                 <numberEnum>Phase</numberEnum>
                 <order>One</order>
